@@ -11,7 +11,7 @@ import lombok.Data;
 public class Anime {
     
     @Id
-    @GeaneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.UUID)
 
     private Long id;
     private String title;
