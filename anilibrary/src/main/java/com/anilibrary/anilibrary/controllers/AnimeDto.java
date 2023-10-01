@@ -20,4 +20,8 @@ public class AnimeDto {
     private String imageUrl;
 
     private String synopsis;
+
+    public AnimeDto(int i, String string, String string0, String string1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
