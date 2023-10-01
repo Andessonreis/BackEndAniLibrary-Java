@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
@@ -23,7 +24,7 @@ public class JikainService {
     
     private final String apiUrl = "https://api.jikan.moe/v3/search/anime?q=jikan";
     private final RestTemplate restTemplate;
-
+    @Autowired
     public JikainService(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
